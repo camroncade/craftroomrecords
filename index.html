@@ -1,37 +1,113 @@
----
-layout: default
----
-<div class="body-wrapper">
-    <div class="logo-spacer"></div>
-    <div class="logo">
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Craftroom Records</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/site.css">
+  </head>
+  <body>
+
+    <div class="header">
+
+      <div class="brand">
+        Craftroom Records
+      </div>
+
+      <div class="contact-button">
+        <a href="#contact">Contact</a>
+      </div>
+
     </div>
 
-    <div class="contact-info">
-        <div class="contact">
-            <div class="label">
-                Booking
+      <div class="artist" style="background-image: url('assets/images/hitchhiking.jpg')">
+
+        <div class="artist-details">
+
+          <div class="artist-text">
+
+            <div class="artist-name">
+              Jack Bradley Vaught
             </div>
-            <div class="email">
-                <a href="mailto:booking@craftroomrecords.com">booking@craftroomrecords.com</a>
+
+            <div class="artist-links">
+              <ul>
+                <li><a href="#">Spotify</a></li>
+                <li><a href="#">Website</a></li>
+              </ul>
             </div>
+
+          </div>
+
+          <div class="artist-picture">
+            <img src="assets/images/jackbradleyvaught.jpeg">
+          </div>
+
         </div>
 
-        <div class="contact">
-            <div class="label">
-                Audio recording
+      </div>
+
+      <div class="artist" style="background-image: url('assets/images/mountain.jpg')">
+
+        <div class="artist-details">
+
+          <div class="artist-text">
+            <div class="artist-name">
+              Camron Matschek
             </div>
-            <div class="email">
-                <a href="mailto:recording@craftroomrecords.com">recording@craftroomrecords.com</a>
+
+            <div class="artist-links">
+              <ul>
+                <li><a href="#">Spotify</a></li>
+                <li><a href="#">Website</a></li>
+              </ul>
             </div>
+          </div>
+
+          <div class="artist-picture">
+            <img src="assets/images/camronmatschek.png">
+          </div>
+
         </div>
 
-        <div class="contact">
-            <div class="label">
-                Everything else
-            </div>
-            <div class="email">
-                <a href="mailto:hello@craftroomrecords.com">hello@craftroomrecords.com</a>
-            </div>
-        </div>
+      </div>
+
+
+    <div class="contact" id="contact">
+
+      <div class="container">
+
+        <h2>Contact</h2>
+
+        <form>
+
+          <div class="contact-group half">
+            <label>Name</label>
+            <input type="text" name="name">
+          </div>
+
+          <div class="contact-group half">
+            <label>Email</label>
+            <input type="text" name="name">
+          </div>
+
+          <div class="contact-group">
+            <label>Message</label>
+            <textarea name="message" rows="8" cols="80"></textarea>
+          </div>
+
+          <button type="submit">Send message</button>
+
+        </form>
+
+      </div>
+
     </div>
-</div>
+
+    <div class="footer">
+      Copyright 2016 &copy; Craftroom Records
+    </div>
+
+  </body>
+</html>
