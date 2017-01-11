@@ -2,7 +2,11 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'Josefin Sans', sans-serif;
+  box-sizing: border-box; }
+
+* {
+  box-sizing: border-box; }
 
 .container {
   max-width: 500px;
@@ -43,6 +47,7 @@ html, body {
   min-height: calc(100% - 6rem);
   background: linear-gradient(to bottom, transparent, black);
   background-size: cover;
+  background-position: center;
   margin: -1rem 0 0 0;
   padding: 1rem 0 1rem 0;
   display: -webkit-flex;
@@ -65,6 +70,12 @@ html, body {
       font-size: 3.5rem;
       font-weight: 300;
       margin-bottom: 0.5rem; }
+      @media (max-width: 400px) {
+        .artist .artist-text .artist-name {
+          font-size: 2rem; } }
+      @media (max-width: 450px) {
+        .artist .artist-text .artist-name {
+          font-size: 2.25rem; } }
     .artist .artist-text .artist-links {
       text-align: right; }
       .artist .artist-text .artist-links ul {
@@ -92,6 +103,14 @@ html, body {
     .artist .artist-picture img {
       height: 6rem;
       border-radius: 6rem; }
+      @media (max-width: 400px) {
+        .artist .artist-picture img {
+          height: 4rem;
+          border-radius: 4rem; } }
+      @media (max-width: 450px) {
+        .artist .artist-picture img {
+          height: 4.5rem;
+          border-radius: 4.5rem; } }
 
 .contact {
   width: 100%;
