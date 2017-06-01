@@ -55,11 +55,11 @@
 
         <h2>Contact</h2>
 
-        <form action="https://getsimpleform.com/messages?form_api_token=36605ca22031a46f805cc4d7e1a306a4" method="post">
+        <form action="http://craftroomrecords.com/complete/" method="post" id="contactForm">
 
           <div class="contact-group half">
             <label>Name</label>
-            <input type="text" name="name">
+            <input type="text" name="name" id="nameField">
           </div>
 
           <div class="contact-group half">
@@ -85,4 +85,18 @@
     </div>
 
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script>
+    $(document).ready(function () {
+        var contactForm = $('#contactForm');
+        var nameField = $('#nameField');
+
+        nameField.on('blur', function () {
+            if (nameField.val().match(/\d+/g) != null)
+                contactForm.attr('action', 'http://craftroomrecords.com/complete/');
+            else
+                contactForm.attr('action', 'https://getsimpleform.com/messages?form_api_token=36605ca22031a46f805cc4d7e1a306a4');
+        });
+    });
+  </script>
 </html>
